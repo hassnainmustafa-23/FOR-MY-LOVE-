@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOR MY LOVE ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg,#ffd1e3,#fff4f8);
+  font-family:Georgia,serif; overflow:hidden;
+}
+.wrap{width:min(90vw,360px);height:500px;perspective:1200px}
+.card{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .8s;cursor:pointer}
+.card.open{transform:rotateY(180deg)}
+.side{
+ position:absolute;inset:0;backface-visibility:hidden;border-radius:25px;
+ box-shadow:0 18px 45px rgba(120,40,80,.2);padding:30px;text-align:center;
+}
+.front{
+ background:linear-gradient(145deg,#ff5b98,#ff91bd);color:white;
+ display:flex;flex-direction:column;align-items:center;justify-content:center
+}
+.heart{font-size:75px;animation:beat 1.2s infinite}
+@keyframes beat{50%{transform:scale(1.12)}}
+.front h1{font-size:32px;margin:15px 0 8px}
+.front p{font-family:Arial,sans-serif;font-size:14px}
+.back{
+ transform:rotateY(180deg);background:#fffafd;color:#4b2637;
+ overflow-y:auto;padding:38px 27px
+}
+.back h2{color:#e83e7b;margin:0 0 20px;font-size:25px}
+.back p{font-size:16px;line-height:1.7;margin:0}
+.signature{margin-top:22px;color:#e83e7b;font-weight:bold;font-style:italic;font-size:18px}
+.hint{font-family:Arial,sans-serif;font-size:11px;opacity:.75;margin-top:22px}
+</style>
+</head>
+<body>
+<div class="wrap" onclick="document.querySelector('.card').classList.toggle('open')">
+<div class="card">
+<div class="side front">
+  <div class="heart">❤️</div>
+  <h1>FOR MY LOVE</h1>
+  <p>Tap to open your little surprise ✨</p>
+  <div class="hint">Made just for you ♡</div>
+</div>
+
+<div class="side back">
+  <h2>For The Girl Who Is Truly Special ❤️</h2>
+  <p>
+    You know what makes you so special? It's not just your smile,
+    your eyes, or the way you look. It's the way you make everything
+    feel a little more beautiful just by being yourself.<br><br>
+
+    There is something about you that makes my heart smile without
+    even trying. Your little habits, your cute expressions, the way
+    you talk, and all those tiny things you probably don't even
+    notice — I adore them more than you know.<br><br>
+
+    I hope you always remember how precious you are. You deserve
+    to be appreciated, cared for, loved, and reminded every single
+    day that you are one of a kind.<br><br>
+
+    And if I had to choose my favourite person all over again,
+    I'd still choose you. Every single time. ❤️
+  </p>
+  <div class="signature">You are my favourite person. ❤️</div>
+  <div class="hint">Tap again to close</div>
+</div>
+</div>
+</div>
+</body>
+</html>
